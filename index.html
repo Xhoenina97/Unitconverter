@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="assets/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+</head>
+<body>
+<div class="converter-main">
+
+    <h1>UNIT CONVERTER</h1>
+
+    <form name="convert1_form">
+        <div class="select_box">
+            <select class="select-convert1" name="the_menu" id="unitsCategories">
+                <option selected disabled>
+                    Select a category
+                </option>
+                <option value="1">
+                    Distance and Length Conversion
+                </option>
+                <option value="2">
+                    Weight and Mass Conversion
+                </option>
+                <option value="3">
+                    Capacity and Volume Conversion
+                </option>
+            </select>
+        </div>
+    </form>
+
+    <div class="converter-side-1">
+        <input type="text" id="inputLeft" class="numbersonly inputFields" name="unit_input" maxlength="20" value="0"
+               disabled>
+        <div class="select_box">
+            <select name="unit_menu" id="unitsTypeLeft" class="unitsType"></select>
+        </div>
+    </div> <!-- /converter-side-1 -->
+
+    <div class="converter-equals">
+        <p>=</p>
+    </div> <!-- /converter-side-1 -->
+
+    <div class="converter-side-2">
+        <input type="text" id="inputRight" class="numbersonly inputFields" name="unit_input" maxlength="20" value="0"
+               disabled>
+        <div class="select_box">
+            <select name="unit_menu" id="unitsTypeRight" class="unitsType"></select>
+        </div>
+    </div> <!-- /converter-side-2 -->
+
+</div><!-- /converter-main -->
+<script src="assets/jquery-3.3.1.min.js"></script>
+<script src="assets/ucum-lhc.min.js"></script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>
+
+
